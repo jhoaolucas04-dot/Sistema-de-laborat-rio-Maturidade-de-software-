@@ -8,7 +8,7 @@ Protótipo web desenvolvido como atividade prática da disciplina **Maturidade e
 |---|---|
 | Jhoão Lucas | 01848181 |
 | Matheus Henrique Costa| 01807287 |
-| Mario Adriano | A preencher |
+| Mario Adriano | 01699703 |
 | Thomas Victor | 01613686 |
 
 ## Sobre o projeto
@@ -54,7 +54,7 @@ Não é necessário instalar dependências ou configurar um servidor para execut
 ## Acesso ao projeto
 
 - **Repositório:** [Sistema de Reserva de Laboratórios no GitHub](https://github.com/jhoaolucas04-dot/Sistema-de-laborat-rio-Maturidade-de-software-)
-- **GitHub Pages:** Adicionar link do Github Pages aqui
+- **GitHub Pages:** https://jhoaolucas04-dot.github.io/Sistema-de-laborat-rio-Maturidade-de-software-/
 
 ## Disciplina
 
