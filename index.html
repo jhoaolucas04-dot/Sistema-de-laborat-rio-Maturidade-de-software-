@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Reserva de Laboratórios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Reserva de Laboratórios</h1>
+        <p class="subtitle">Laboratório de Informática - Professores</p>
+    </header>
+
+    <main>
+        <section class="labs-section">
+            <h2>Laboratórios Disponíveis</h2>
+            <div id="labs-container" class="labs-grid">
+                <!-- Laboratórios serão carregados aqui -->
+            </div>
+        </section>
+
+        <section class="reservation-section">
+            <h2>Realizar Reserva</h2>
+            <form id="reservation-form">
+                <div class="form-group">
+                    <label for="professor-nome">Nome do Professor *</label>
+                    <input type="text" id="professor-nome" name="professorNome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="professor-matricula">Matrícula *</label>
+                    <input type="text" id="professor-matricula" name="professorMatricula" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="laboratorio">Laboratório *</label>
+                    <select id="laboratorio" name="laboratorio" required>
+                        <option value="">Selecione um laboratório</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tipo-atividade">Tipo de Atividade *</label>
+                    <select id="tipo-atividade" name="tipoAtividade" required>
+                        <option value="">Selecione o tipo</option>
+                        <option value="aula-regular">Aula Regular</option>
+                        <option value="outro">Outra Finalidade</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="data">Data *</label>
+                    <input type="date" id="data" name="data" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="horario">Horário *</label>
+                    <input type="time" id="horario" name="horario" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="finalidade">Finalidade da Reserva *</label>
+                    <textarea id="finalidade" name="finalidade" rows="3" required></textarea>
+                </div>
+
+                <button type="submit" id="submit-btn">Reservar</button>
+            </form>
+        </section>
+
+        <section class="confirmation-section" id="confirmation-section" style="display: none;">
+            <h2>Confirmação da Reserva</h2>
+            <div id="confirmation-content" class="confirmation-content"></div>
+            <button id="close-confirmation" class="secondary-btn">Fechar</button>
+        </section>
+
+        <section class="reservations-section">
+            <h2>Minhas Reservas</h2>
+            <div id="reservations-list" class="reservations-list">
+                <p class="empty-state">Nenhuma reserva realizada.</p>
+            </div>
+        </section>
+
+        <section class="messages-section">
+            <div id="validation-messages" class="messages"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sistema de Reserva de Laboratórios</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
